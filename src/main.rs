@@ -1,6 +1,5 @@
 use std::fs;
 
-// use regex::Regex;
 use serde::Deserialize;
 
 mod book;
