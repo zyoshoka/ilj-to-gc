@@ -33,6 +33,7 @@ impl Book {
     pub fn get_start_date(&self) -> Date {
         Date { date: self.due_date }
     }
+
     pub fn get_end_date(&self) -> Date {
         Date { date: self.due_date + Duration::days(1) }
     }
