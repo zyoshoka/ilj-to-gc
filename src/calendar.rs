@@ -150,6 +150,6 @@ async fn update_event(client: &reqwest::Client, calendar_event_base_url: String,
 
     client.put(calendar_event_base_url.clone() + "/events/" + &book.get_id())
         .bearer_auth(access_token.clone())
-        .json(&event)
+        .json(&updated_event)
         .send().await.unwrap();
 }
