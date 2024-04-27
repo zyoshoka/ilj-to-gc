@@ -6,7 +6,7 @@ mod book;
 mod calendar;
 
 #[derive(Deserialize)]
-struct Config {
+pub struct Config {
     base_url: String,
     userid: String,
     password: String,
